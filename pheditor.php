@@ -1565,7 +1565,7 @@ $_SESSION['pheditor_token'] = bin2hex(random_bytes(32));
 					"margin-right": "0px"
 				}, 250);
 
-				if (window.innerWidth >= 720) {
+				/*if (window.innerWidth >= 720) {
 					var height = window.innerHeight - $(".CodeMirror")[0].getBoundingClientRect().top - $("#terminal #prompt").height() - 55;
 
 					$("#files, .CodeMirror").animate({
@@ -1575,13 +1575,13 @@ $_SESSION['pheditor_token'] = bin2hex(random_bytes(32));
 					$("#files > div, .CodeMirror").animate({
 						"height": ""
 					}, 250);
-				}
+				}*/
 
 				setCookie("terminal", "1", 86400);
 			}).on('hide.bs.collapse', function() {
 				$("#terminal").find(".clear, .copy, .fullscreen").fadeOut();
 
-				if (window.innerWidth >= 720) {
+				/*if (window.innerWidth >= 720) {
 					var height = window.innerHeight - $(".CodeMirror")[0].getBoundingClientRect().top - $("#terminal span").height() - 35;
 
 					$("#files, .CodeMirror").animate({
@@ -1591,7 +1591,7 @@ $_SESSION['pheditor_token'] = bin2hex(random_bytes(32));
 					$("#files > div, .CodeMirror").animate({
 						"height": ""
 					}, 250);
-				}
+				}*/
 
 				setCookie("terminal", "0", 86400);
 			}).on('shown.bs.collapse', function() {
